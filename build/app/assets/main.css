@@ -1,0 +1,105 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+
+body
+{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('../img/1.gif');
+}
+
+a
+{
+    color: white;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: lightblue;
+    opacity: .95;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.generator, .reader
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 170px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.reader
+{
+    margin-top: 20px;
+    height: 320px;
+}
+
+#message
+{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    font-size: 25px;
+}
+
+.generator button, .reader button, .reader label
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+}
+
+.reader label
+{
+    margin: 10px 0 10px 0;
+}
+
+.reader button
+{
+    margin-bottom: 10px;
+}
+
+#field
+{
+    margin: 10px 0 10px 0;
+    width: 70%;
+    height: 20%;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.generator button:hover, .reader button:hover, .reader label:hover
+{
+    transition: .320s;
+    transform: scale(1.1);
+}

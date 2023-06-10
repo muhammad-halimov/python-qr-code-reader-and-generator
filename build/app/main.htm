@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/main.css"/>
+    <link rel="shorcut icon" type="image" href="img/favicon.jpg">
+    <script type="text/javascript" src="eel.js"></script>
+    <title>QR-CODE GENERATOR & READER</title>
+</head>
+<body>
+    <div class="content">
+        <div class="generator">
+            <h1>Закодировать</h1>
+            <p>Впишите сюда адресс или послание для кодирования⬇️</p>
+            <input type="text" id="message"/>
+            <button type="submit" onclick="generator_js()">Старт</button>
+        </div>
+        <div class="reader">
+            <h1>Прочитать/<a href="main.htm" style="color: red">Обновить страницу</a></h1>
+            <p>Перетащите сюда файл⬇️</p>
+            <input type="file" id="field" draggable="true"/>
+            <p>Или выберите файл с устройства⬇️</p>
+            <input type="file" id="chosen" style="display: none;"/>
+            <label for="chosen">Выбрать файл</label>
+            <button type="submit" onclick="reader_js()">Старт</button>
+            <p>Послание:</p>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script defer type="text/javascript" src="assets/main.js"></script>
+</body>
+</html>
