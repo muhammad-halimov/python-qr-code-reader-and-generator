@@ -10,7 +10,9 @@ If you don't installed this libraryes before, you can just unarchive the venv fo
 
 If you want to see the result, you should copy file that you want to convert to the project catalog beside qr.py (it uses the relative paths), when you start the project choose file that you copied !
 
-After a few moment apears a window that tells you that converting is done !
+After a few moment apears a window that tells you that reading or generating is done !
+
+The result of reading will appears in the bottom.
 
 Some links and comands:
 https://www.python.org/downloads/ - download python
